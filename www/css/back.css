@@ -1,0 +1,47 @@
+body #lostC{
+display: none;
+}
+html #load{
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+html #miIconNav{
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    visibility: hidden;
+}
+
+html.shiny-busy #load{
+    /* Replace #333 with the background-color of your choice */
+    /* Replace loading.gif with the loading image of your choice */
+    background: #CFD2CD  50% 50%;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+}
+html.shiny-busy #miIconNav{
+visibility: visible;
+}
+#load {
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+body.disconnected #load, body.disconnected .card{
+    /* Replace #333 with the background-color of your choice */
+    /* Replace loading.gif with the loading image of your choice */
+    background: #373F47;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    transition: background-color 0;
+} 
+body.disconnected #lostC{
+display: block;
+}
+
+body > .container{
+padding-top: 60px;    
+}
+
